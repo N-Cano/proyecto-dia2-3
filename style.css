@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --sedans: hsl(31, 77%, 52%);
+    --suvs: hsl(184, 100%, 22%);
+    --luxury: hsl(179, 100%, 13%);
+    
+    --paragraphs: hsla(0, 0%, 100%, 0.50);
+    --background: hsl(0, 0%, 95%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: var(--background);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    color: var(--background);
+    font-size: 15px;
+}
+
+/* MAIN */
+
+.main {
+    display: flex;
+    margin: auto;
+    max-width: 750px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.main p {
+    color: var(--paragraphs);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    margin-bottom: 5rem;
+    line-height: 1.5rem;
+}
+
+.main button {
+    margin-bottom: 1.5rem;
+    border-radius: 100px;
+    background: var(--background);
+    text-decoration: none;
+    border: none;
+    padding: .75rem 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+/* SEDANS */
+
+.sedans {
+    background-color: var(--sedans);
+    padding: 1.5rem;
+    border-radius: .5rem 0 0 .5rem;
+}
+
+.sedans img {
+    width: 3rem;
+}
+
+.sedans h2 {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.sedans button {
+    color: var(--sedans);
+    border: 2px solid var(--background);
+}
+
+.sedans button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--background);
+    border: 2px solid var(--background);
+}
+
+/* SUVS */
+
+.suvs {
+    background-color: var(--suvs);
+    padding: 1.5rem;
+}
+
+.suvs img {
+    width: 3rem;
+}
+
+.suvs h2 {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.suvs button {
+    color: var(--suvs);
+    border: 2px solid var(--background);
+}
+
+.suvs button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--background);
+    border: 2px solid var(--background);
+}
+
+/* LUXURY */
+
+.luxury {
+    background-color: var(--luxury);
+    padding: 1.5rem;
+    border-radius: 0 .5rem .5rem 0;
+}
+
+.luxury img {
+    width: 3rem;
+}
+
+.luxury h2 {
+    margin: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.luxury button {
+    color: var(--luxury);
+    border: 2px solid var(--background);
+}
+
+.luxury button:hover {
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--background);
+    border: 2px solid var(--background);
+}
+
+@media screen and (max-width: 992px) {
+    
+    body {
+        padding: 1rem;
+    }
+    
+    .main {
+        display: inline-block;
+        width: 100%;
+        max-width: 1000px;
+        min-width: 375px;
+    }
+
+    .sedans {
+        border-radius: .5rem .5rem 0 0;
+    }
+
+
+    .luxury {
+        border-radius: 0 0 .5rem .5rem;
+    }
+    
+}
